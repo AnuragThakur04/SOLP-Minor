@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+        <script>
+            know = {
+                "": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp how can i help you?",
+                "hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  hi! how can i help ?",
+                "how are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp good , what about you ?",
+                "ok" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :)",
+                "hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp hi! how can i help ?",
+                "hlo" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp hi! how can i help ?",
+                "good" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :)",
+                "tell me about this app": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp This is an interactive platform where you can find notes/lectures and even someone who can help you not only in studies but also he/she will guide you establish your aim and for future step"     ,
+                "thank you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :)",
+                "thanks" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp :)"           
+            };
+            function talk() {
+                var user = document.getElementById("userBox").value;
+                document.getElementById("userBox").value = "";
+                document.getElementById("chatLog").innerHTML += user+"<br>";
+                if (user in know) {
+                    document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+                } else {
+                    document.getElementById("chatLog").innerHTML += "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I don't understand...<br>";
+                }
+            } 
+        </script>
+    </head>
+    <body>
+        <h1 id="chatLog"> CHAT WITH US <br></h1>
+        <input id="userBox" type="text" placeholder="Type here!" onkeydown="if (event.keyCode == 13) {talk()}">
+        
+    </body>
+    <a href="/login" ><button type="button" class="btn btn-link">Login</button></a> 
+     <a href="/register" ><button type="button" class="btn btn-link">Register</button></a> 
+</html>

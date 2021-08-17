@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+{{!--
+<div class="containee-fluid mt-5 contact-style" id="contact id">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <h1 class="text-center main-heading"> Contact Us</h1>
+            <p class="text-center sub-heading">We will be happy to help you!</p>
+            <div class="row">
+                <div class="col-md-6 col-12 mx-auto">
+                    <form action="/contact" method="POST">
+                        <div class="form-group">
+                            <label for="exampleInputPassword">name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword" placeholder="Full Name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputPassword" aria-describedby="emailhelp" placeholder="Enter your email" name="email">
+                            <small id="emailhelp" class="form-text text-muted"> We'll never share your email with anyone else</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword">Phone</label>
+                            <input type="number" class="form-control" id="exampleInputPassword" placeholder="Phone number" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword">Message</label>
+                            <input type="tetx" class="form-control" id="exampleInputPassword" placeholder="Message" name="Message">
+                        </div>
+                        <button type="submit" class="btn-style btn-primary">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+--}}
+
+<div class="app_register">
+    <div class="app_register_container">
+        <h1 id="logo">Contact Us!</h1>
+    <form class="register_form" action="/contact" method="POST">
+
+      <div class="register_form_input">
+        <h2>UserName</h2>
+        <input type="text" id="username" placeholder="Username" name="username">
+      </div>
+     <div class="register_form_input">
+        <h2>Email</h2>
+        <input type="email"placeholder="Enter your email" name="email">
+      </div>
+      <div class="register_form_input">
+        <h2>Mobile number</h2>
+        <input type="text" placeholder="Mobile number" name="phone" id="phone">
+      </div>
+      <div class="register_form_input">
+            <h2>Message</h2>
+            <input type="tetx" id="exampleInputPassword" placeholder="Message" name="Message">
+        </div>
+      
+        
+      <button type="submit"  class="btn-style btn-primary register_form_button">submit</button>
+    </form>
+    
+     
+    </div>
+  </div>
+
+{{! MAP start}}
+
+  {{>map}}
+
+  {{! MAP ends}}
+
+  <div class="navbar">
+  <div class="app__header">
+    <h2 style="text-align: left;" class="about__para" ><img src="Gmail.png">gnesolp@gmail.com</h2>
+  </div>
+  
+  </div>
+</div>
+
+
+
+<script src="../jq/jquery.js" type="text/javascript"></script>
+     <script src="../jq/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
