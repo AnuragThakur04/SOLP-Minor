@@ -281,15 +281,6 @@ app.post("/more" , async(req , res)=>{
         res.status(500).send(error);
     }
 })
-
-
-
-
-
-
-
-
-
 // server create 
 app.listen(port , ()=> {
     console.log(`server is running at port no ${port}`);
